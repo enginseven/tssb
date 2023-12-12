@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Hasta Girişi</title>
+    <style>
+        /* Stil detayları */
+        body {
+            background-color: #26A69A;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .containerr {
+            max-width: 1300px;
+            margin: auto;
+            margin-top:3%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        label,
+        input,
+        textarea {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width:50%;
+            margin-left:25%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+
+    <script src="/static/js/main.js"></script>
+    
+    <!-- Bootstrap CSS -->
+   
+   
+   
+</head>
+
+<body>
+    
+  
+    <div class="containerr">
+        <h2>Testres AI</h2>
+
+        <p style="font-size: 1.2em;letter-spacing: 1px;   text-align: justify; line-height: 1.5; font-family: Arial;">Birçok kişi yaşamının herhangi bir döneminde onu olumsuz etkileyen travma olarak adlandırılabilecek bir ya da birden
+             çok olay yaşar. Bugüne kadar sizi olumsuz olarak en çok etkilemiş olan olayı bugünki bakış açınızla  kendi duygu düşünceleriniz 
+             algılanız ve yaşadıklarınız üzerinden yazar mısınız? Olayın ayrıntıları değil sizin halen (şu anda) nasıl hissettiğiniz ne düşündüğünüz önemlidir.
+            <i style="font-size:0.9em;"> (örneğin çok ağır bir koku ya da kulakları sağır eden bir ses oldu...bir daha sevdiklerimi göremeyeceğimi düşündüm..halen kalabalık yerlerde bulunduğumda benzer duyguları hissediyorum gibi)</i></p>
+
+        <form id="hastaForm">
+
+            <div class="mb-3">
+            <label class="d-flex justify-content-start" for="hastaNo">Kullanıcı Id:</label>
+            <input class="form-control" type="text" id="hastaNo" name="hastaNo" required>
+
+            </div>
+
+            <div class="mb-3 pe-4">
+
+            <label class="d-flex justify-content-start" for="paragraf">Etki Ölçeği:</label>
+            <textarea class="form-control" style="resize:none" rows="20"   id="paragraf" name="paragraf" required></textarea>
+
+            </div>
+
+            <input type="submit" value="Teste Geç">
+        </form>
+    </div>
+
+
+
+    <script>
+        document.getElementById('hastaForm').onsubmit = function (event) {
+            event.preventDefault();
+
+            var hastaNo = document.getElementById('hastaNo').value;
+            var paragraf = document.getElementById('paragraf').value;
+
+            // Hasta numarasını ve paragrafı localStorage'a kaydedin
+            localStorage.setItem('hastaNo', hastaNo);
+            localStorage.setItem('paragraf', paragraf);
+
+            // Hasta numarasını ve paragrafı sunucuya gönderin
+            fetch('/hasta_metin/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    hasta_no: hastaNo,
+                    paragraf: paragraf
+                })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Success:', data);
+                    // Sunucu tarafından başarılı bir yanıt aldıktan sonra sorular sayfasına yönlendirin
+                    window.location.href = '/questionnaire';
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Bir hata oluştu, lütfen daha sonra tekrar deneyin.');
+                });
+        };
+    </script>
+</body>
+
+</html>
