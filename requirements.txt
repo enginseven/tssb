@@ -2,13 +2,14 @@ fastapi
 uvicorn
 sqlalchemy
 databases
-psycopg2-binary
+psycopg2
 python-multipart
 joblib
 scikit-learn
 #pickle
 numpy
 Jinja2
+
 
 
 # vs code indirilmesi
