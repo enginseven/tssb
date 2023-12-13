@@ -14,14 +14,10 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 # Model ve vektörleştirici dosyalarının yolları
-#ml_model_path = '/home/testptsd/tssb/app/logistic_regression_model_pickle.pkl'
-#model_path = '/home/testptsd/tssb/app/knn_model.pkl'
-#vectorizer_path = '/home/testptsd/tssb/app/tfidf_vectorizer.pkl'
+ml_model_path = '/opt/render/project/src/tssb/app/logistic_regression_model_pickle.pkl'
+model_path = '/opt/render/project/src/tssb/app/knn_model.pkl'
+vectorizer_path = '/opt/render/project/src/tssb/app/tfidf_vectorizer.pkl'
 
-
-vectorizer_path = pickle.load(open('tfidf_vectorizer.pkl','rb'))
-model_path = pickle.load(open('knn_model.pkl','rb'))
-ml_model_path = pickle.load(open('logistic_regression_model_pickle.pkl','rb'))
 
 
 # Model ve vektörleştiriciyi pickle ile yükleyin
