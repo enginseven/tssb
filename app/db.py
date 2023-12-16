@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from .models import Base, HastaMetin, HastaSorular#, HastaGozlem
 
-DATABASE_URL = "postgresql://testuser:test123@/localhost/testdb"
+DATABASE_URL = "postgresql://testuser:test123@/localhost/testdb:5432"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
