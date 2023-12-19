@@ -18,9 +18,7 @@ ml_model_path = '/home/ubuntu/tssb/app/logistic_regression_model_pickle.pkl'
 model_path = '/home/ubuntu/tssb/app/knn_model.pkl'
 vectorizer_path = '/home/ubuntu/tssb/app/tfidf_vectorizer.pkl'
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
+
 
 
 # Model ve vektörleştiriciyi pickle ile yükleyin
