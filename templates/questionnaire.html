@@ -12,7 +12,7 @@
     <style>
         /* Eski sayfanın CSS stilleri burada */
         body {
-            background-color: #00B7EB;
+            background-color:  #26A69A;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -76,11 +76,11 @@
 
 <body>
     <div class="container">
-        <h2>Test Soruları</h2>
+        <h2>TSSB ÖLÇEĞİ (PCL-5)</h2>
 
         <form id="testForm">
             <table class="table table-hover shadow">
-                <tr >
+                <tr class="text-bg-primary" >
                     <th>Soru</th>
                     <th style="width: 400px;"> Hiç - Çok az - Orta derecede - Oldukça fazla - Aşırı</th> <!-- Sabit genişlik -->
                 </tr>
@@ -89,13 +89,13 @@
                     <td>Soru 1: Stresli olayın tekrarlayan, rahatsız eden ve istenmeyen anıları sizi ne kadar bunalttı?
                     </td>
                     <td>
-                       <div class="form-switch">                       
+                       <div class="form-check">                       
                         
-                        <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question1" value="0">0</label>
-                        <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question1" value="1">1</label>
-                        <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question1" value="2">2</label>
-                        <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question1" value="3">3</label>
-                        <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question1" value="4">4</label>
+                        <label class="option-label"><input class="form-check-input ms-4" type="radio" name="question1" value="0">0</label>
+                        <label class="option-label"><input class="form-check-input ms-4" type="radio" name="question1" value="1">1</label>
+                        <label class="option-label"><input class="form-check-input ms-4" type="radio" name="question1" value="2">2</label>
+                        <label class="option-label"><input class="form-check-input ms-4" type="radio" name="question1" value="3">3</label>
+                        <label class="option-label"><input class="form-check-input ms-4" type="radio" name="question1" value="4">4</label>
                            
                     </div>
                         
@@ -106,7 +106,7 @@
                 <tr>
                     <td>Soru 2: Stresli olaya ilişkin tekrarlayan, rahatsız eden rüyalar sizi ne kadar bunalttı?</td>
                     <td>
-                        <div class="form-switch">                       
+                        <div class="form-check">                       
                         
                             <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question2" value="0">0</label>
                             <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question2" value="1">1</label>
@@ -123,11 +123,15 @@
                         (sanki gerçekten olayın yaşandığı ana geri dönmüş yeniden yaşıyormuş gibi) sizi ne kadar
                         bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question3" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question3" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question3" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question3" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question3" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question3" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question3" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question3" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question3" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question3" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -135,11 +139,15 @@
                     <td>Soru 4: Bir şeyler size stresli olayı anımsattığı zaman yaşadığınız üzüntü hissi sizi ne kadar
                         bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question4" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question4" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question4" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question4" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question4" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question4" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question4" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question4" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question4" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question4" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -147,11 +155,15 @@
                     <td>Soru 5: Bir şeyler size stresli olayı anımsattığı zaman güçlü fiziksel tepkiler vermek (örneğin,
                         kalp çarpıntısı, nefes almada güçlük, terleme gibi) sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question5" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question5" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question5" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question5" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question5" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question5" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question5" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question5" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question5" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question5" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -159,11 +171,15 @@
                     <td>Soru 6: Stresli olayla ilişkili anılardan, düşüncelerden ve duygulardan kaçınmaya çalışmak sizi
                         ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question6" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question6" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question6" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question6" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question6" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question6" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question6" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question6" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question6" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question6" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -172,11 +188,15 @@
                         yerlerden, konuşmalardan, etkinliklerden, nesnelerden veya durumlardan) kaçınmaya çalışmak sizi
                         ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question7" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question7" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question7" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question7" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question7" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question7" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question7" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question7" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question7" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question7" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -184,11 +204,15 @@
                     <td>Soru 8: Stresli olaya ilişkin önemli kısımları hatırlamada yaşanan güçlükler sizi ne kadar
                         bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question8" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question8" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question8" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question8" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question8" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question8" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question8" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question8" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question8" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question8" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -197,11 +221,15 @@
                         (örneğin, kötü biriyim, bende ciddi şekilde yanlış olan bir şeyler var, kimseye güvenilmez,
                         dünya tümüyle tehlikeli bir yerdir gibi düşünceler) sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question9" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question9" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question9" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question9" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question9" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question9" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question9" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question9" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question9" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question9" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -209,11 +237,15 @@
                     <td>Soru 10: Stresli olay veya bu olayın sonrasında ortaya çıkan durumlar için kendinizi veya bir
                         başkasını suçlamak sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question10" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question10" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question10" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question10" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question10" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question10" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question10" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question10" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question10" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question10" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -221,11 +253,15 @@
                     <td>Soru 11: Korku, dehşete kapılma, öfke, suçluluk veya utanç gibi güçlü olumsuz duygular sizi ne
                         kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question11" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question11" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question11" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question11" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question11" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question11" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question11" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question11" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question11" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question11" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -233,22 +269,30 @@
                     <td>Soru 12: Daha önce yapmaktan keyif aldığınız etkinliklere olan ilginizi kaybetmek sizi ne kadar
                         bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question12" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question12" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question12" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question12" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question12" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question12" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question12" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question12" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question12" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question12" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>Soru 13: Başka insanlardan uzak veya kopmuş hissetmek sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question13" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question13" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question13" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question13" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question13" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question13" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question13" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question13" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question13" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question13" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -256,22 +300,30 @@
                     <td>Soru 14: Olumlu duyguları yaşayamamak (örneğin, mutluluğu hissedememek veya size yakın insanlara
                         sevgi dolu hisler duyamamak) sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question14" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question14" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question14" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question14" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question14" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question14" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question14" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question14" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question14" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question14" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>Soru 15: Asabi davranışlar, öfke patlamaları veya öfkeli hareketler sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question15" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question15" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question15" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question15" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question15" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question15" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question15" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question15" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question15" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question15" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -279,11 +331,15 @@
                     <td>Soru 16: Çok fazla risk almak veya size zarar verebilecek şeyler yapmak sizi ne kadar bunalttı?
                     </td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question16" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question16" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question16" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question16" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question16" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question16" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question16" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question16" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question16" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question16" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
@@ -291,44 +347,60 @@
                     <td>Soru 17: Aşırı tetikte olmak veya temkinli davranmak veya hazırda beklemek sizi ne kadar
                         bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question17" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question17" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question17" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question17" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question17" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question17" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question17" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question17" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question17" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question17" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>Soru 18: Yerinden sıçramak veya kolayca irkilmek sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question18" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question18" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question18" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question18" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question18" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question18" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question18" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question18" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question18" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question18" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>Soru 19: Dikkati toplamada güçlükler sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question19" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question19" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question19" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question19" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question19" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question19" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question19" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question19" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question19" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question19" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
                 <tr>
                     <td>Soru 20: Uykuya dalma veya uykuyu devam ettirme güçlükleri sizi ne kadar bunalttı?</td>
                     <td>
-                        <label class="option-label"><input type="radio" name="question20" value="0"> 0</label>
-                        <label class="option-label"><input type="radio" name="question20" value="1"> 1</label>
-                        <label class="option-label"><input type="radio" name="question20" value="2"> 2</label>
-                        <label class="option-label"><input type="radio" name="question20" value="3"> 3</label>
-                        <label class="option-label"><input type="radio" name="question20" value="4"> 4</label>
+                        <div class="form-check">                       
+                        
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question20" value="0">0</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question20" value="1">1</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question20" value="2">2</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question20" value="3">3</label>
+                            <label class="option-label"><input class="form-check-input ms-1" type="radio" name="question20" value="4">4</label>
+                               
+                        </div>
                     </td>
                 </tr>
 
